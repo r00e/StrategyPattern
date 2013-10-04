@@ -5,11 +5,11 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProductVersion>8.0.30703</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{0B58153D-B77A-4753-AE21-DBF6F43D77D2}</ProjectGuid>
+    <ProjectGuid>{4E1EEEAF-C4EE-458B-8ACB-3EAD39B110B7}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>StrategyPattern</RootNamespace>
-    <AssemblyName>StrategyPattern</AssemblyName>
+    <RootNamespace>StrategyPatternTest</RootNamespace>
+    <AssemblyName>StrategyPatternTest</AssemblyName>
     <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
@@ -38,13 +38,22 @@
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System.Data" />
     <Reference Include="System.Xml" />
+    <Reference Include="xunit">
+      <HintPath>..\packages\xunit.1.9.2\lib\net20\xunit.dll</HintPath>
+    </Reference>
+    <Reference Include="xunit.extensions">
+      <HintPath>..\packages\xunit.extensions.1.9.2\lib\net20\xunit.extensions.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="MallardDuck.cs" />
+    <Compile Include="DuckFact.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Duck.cs" />
-    <Compile Include="RedheadDuck.cs" />
-    <Compile Include="Rubberduck.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\StrategyPattern\StrategyPattern.csproj">
+      <Project>{0B58153D-B77A-4753-AE21-DBF6F43D77D2}</Project>
+      <Name>StrategyPattern</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

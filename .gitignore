@@ -4,3 +4,5 @@ _ReSharper.StrategyPattern/
 StrategyPattern.5.1.ReSharper.user
 StrategyPattern/bin/
 StrategyPattern/obj/
+StrategyPatternTest/bin/
+StrategyPatternTest/obj/

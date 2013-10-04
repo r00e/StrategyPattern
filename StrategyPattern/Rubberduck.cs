@@ -1,0 +1,17 @@
+using System;
+
+namespace StrategyPattern
+{
+    public class Rubberduck : Duck
+    {
+        public override string Display()
+        {
+            return "I'm made of rubber.";
+        }
+
+        public new string Quack()
+        {
+            return "cheep cheep cheep";
+        }
+    }
+}
