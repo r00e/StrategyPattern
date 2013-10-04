@@ -1,39 +1,34 @@
 ﻿using StrategyPattern;
 using Xunit;
-using Xunit.Extensions;
 
 namespace StrategyPatternTest
 {
     public class DuckFact
     {
-        private const string Quack = "gua gua gua!!!";
-        private const string QuackForRubberduck = "cheep cheep cheep";
-        private const string Swim = "Yahoo~ The water is so cold~~";
-
         [Fact]
         public void should_get_Quack_method_from_super_class()
         {
             var mallardDuck = new MallardDuck();
-            Assert.Equal(Quack, mallardDuck.Quack());
+            Assert.Equal("gua gua gua!!!", mallardDuck.Quack());
 
             var redheadDuck = new RedheadDuck();
-            Assert.Equal(Quack, redheadDuck.Quack());
+            Assert.Equal("gua gua gua!!!", redheadDuck.Quack());
 
             var rubberduck = new Rubberduck();
-            Assert.Equal(QuackForRubberduck, rubberduck.Quack());
+            Assert.Equal("cheep cheep cheep", rubberduck.Quack());
         }
 
         [Fact]
         public void should_get_Swim_method_from_super_class()
         {
             var mallardDuck = new MallardDuck();
-            Assert.Equal(Swim, mallardDuck.Swim());
+            Assert.Equal("Yahoo~ The water is so cold~~", mallardDuck.Swim());
 
             var redheadDuck = new RedheadDuck();
-            Assert.Equal(Swim, redheadDuck.Swim());
+            Assert.Equal("Yahoo~ The water is so cold~~", redheadDuck.Swim());
 
             var rubberduck = new Rubberduck();
-            Assert.Equal(Swim, rubberduck.Swim());
+            Assert.Equal("Yahoo~ The water is so cold~~", rubberduck.Swim());
         }
 
         [Fact]
@@ -56,5 +51,22 @@ namespace StrategyPatternTest
             var rubberduck = new Rubberduck();
             Assert.Contains("rubber", rubberduck.Display());
         }
+
+//        [Fact]
+//        public void should_return_fly_wings_for_MallardDuck_and_RedHeadDuck()
+//        {
+//            var mallardDuck = new MallardDuck();
+//            Assert.Equal("I'm flying with my wings.", mallardDuck.PerformFly());
+//
+//            var redheadDuck = new RedheadDuck();
+//            Assert.Equal("I'm flying with my wings.", redheadDuck.PerformFly());
+//        }
+//
+//        [Fact]
+//        public void should_return_can_not_fly_for_RubberDuck()
+//        {
+//            var rubberduck = new Rubberduck();
+//            Assert.Equal("I cannot fly.", rubberduck.PerformFly());
+//        }
     }
 }
