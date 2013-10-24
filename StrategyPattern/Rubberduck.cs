@@ -18,5 +18,10 @@ namespace StrategyPattern
         {
             return "I cannot fly.";
         }
+
+        public new string Swim()
+        {
+            return "swim like a shark";
+        }
     }
 }
