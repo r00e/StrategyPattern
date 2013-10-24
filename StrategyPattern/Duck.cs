@@ -16,7 +16,7 @@
 
         public string Fly()
         {
-            return "I am flying!! Look the ants on the ground!!";
+            return "I'm flying with my wings.";
         }
     }
 }

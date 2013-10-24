@@ -35,17 +35,17 @@ namespace StrategyPatternTest
             Assert.Equal("I'm made of rubber.", rubberduck.Display());
         }
 
-//        [Fact]
-//        public void test_Fly_action()
-//        {
-//            var mallardDuck = new MallardDuck();
-//            Assert.Equal("I'm flying with my wings.", mallardDuck.PerformFly());
-//
-//            var redheadDuck = new RedheadDuck();
-//            Assert.Equal("I'm flying with my wings.", redheadDuck.PerformFly());
-//
-//            var rubberduck = new Rubberduck();
-//            Assert.Equal("I cannot fly.", rubberduck.PerformFly());
-//        }
+        [Fact]
+        public void test_Fly_action()
+        {
+            var mallardDuck = new MallardDuck();
+            Assert.Equal("I'm flying with my wings.", mallardDuck.Fly());
+
+            var redheadDuck = new RedheadDuck();
+            Assert.Equal("I'm flying with my wings.", redheadDuck.Fly());
+
+            var rubberduck = new Rubberduck();
+            Assert.Equal("I cannot fly.", rubberduck.Fly());
+        }
     }
 }

@@ -13,5 +13,10 @@ namespace StrategyPattern
         {
             return "cheep cheep cheep";
         }
+
+        public new string Fly()
+        {
+            return "I cannot fly.";
+        }
     }
 }
