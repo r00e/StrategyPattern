@@ -20,7 +20,7 @@ namespace StrategyPatternTest
         {
             var redheadDuck = new RedheadDuck();
 
-            Assert.Equal("red head gua", redheadDuck.Quack());
+            Assert.Equal("gua gua gua!!!", redheadDuck.Quack());
             Assert.Equal("swim like a shark", redheadDuck.Swim());
             Assert.Equal("Hi I am red head duck.", redheadDuck.Display());
         }
@@ -34,18 +34,18 @@ namespace StrategyPatternTest
             Assert.Equal("swim like a shark", rubberduck.Swim());
             Assert.Equal("I'm made of rubber.", rubberduck.Display());
         }
-
-        [Fact]
-        public void test_Fly_action()
-        {
-            var mallardDuck = new MallardDuck();
-            Assert.Equal("I'm flying with my wings.", mallardDuck.Fly());
-
-            var redheadDuck = new RedheadDuck();
-            Assert.Equal("I'm flying with my wings.", redheadDuck.Fly());
-
-            var rubberduck = new Rubberduck();
-            Assert.Equal("I cannot fly.", rubberduck.Fly());
-        }
+//
+//        [Fact]
+//        public void test_Fly_action()
+//        {
+//            var mallardDuck = new MallardDuck();
+//            Assert.Equal("I'm flying with my wings.", mallardDuck.Fly());
+//
+//            var redheadDuck = new RedheadDuck();
+//            Assert.Equal("I'm flying with my wings.", redheadDuck.Fly());
+//
+//            var rubberduck = new Rubberduck();
+//            Assert.Equal("I cannot fly.", rubberduck.Fly());
+//        }
     }
 }
