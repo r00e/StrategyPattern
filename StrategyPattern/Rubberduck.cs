@@ -1,12 +1,10 @@
-using System;
-
 namespace StrategyPattern
 {
     public class Rubberduck : Duck
     {
         public override string Quack()
         {
-            return "cheep cheep cheep";
+            return new CheepQuack().PerformQuack();
         }
 
         public override string Swim()

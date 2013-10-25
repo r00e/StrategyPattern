@@ -4,7 +4,7 @@
     {
         public virtual string Quack()
         {
-            return "gua gua gua!!!";
+            return new NormalQuack().PerformQuack();
         }
 
         public virtual string Swim()
