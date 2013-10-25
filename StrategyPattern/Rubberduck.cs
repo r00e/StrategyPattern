@@ -2,9 +2,9 @@ namespace StrategyPattern
 {
     public class Rubberduck : Duck
     {
-        public override string Quack()
+        public Rubberduck()
         {
-            return new CheepQuack().PerformQuack();
+            quackBehavior = new CheepQuack();
         }
 
         public override string Swim()

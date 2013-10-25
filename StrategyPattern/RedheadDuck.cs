@@ -4,6 +4,11 @@ namespace StrategyPattern
 {
     public class RedheadDuck : Duck
     {
+        public RedheadDuck()
+        {
+            quackBehavior = new NormalQuack();
+        }
+
         public override string Swim()
         {
             return "swim like a shark";

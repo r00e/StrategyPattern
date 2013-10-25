@@ -2,9 +2,11 @@
 {
     public abstract class Duck
     {
+        protected IQuackBehavior quackBehavior;
+
         public virtual string Quack()
         {
-            return new NormalQuack().PerformQuack();
+            return quackBehavior.PerformQuack();
         }
 
         public virtual string Swim()
