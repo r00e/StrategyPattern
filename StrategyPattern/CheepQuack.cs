@@ -1,6 +1,6 @@
 namespace StrategyPattern
 {
-    public class CheepQuack
+    public class CheepQuack : IQuackBehavior
     {
         public string PerformQuack()
         {

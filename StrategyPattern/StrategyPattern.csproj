@@ -40,7 +40,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CheepQuack.cs" />
+    <Compile Include="IQuackBehavior.cs" />
     <Compile Include="MallardDuck.cs" />
+    <Compile Include="NormalQuack.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Duck.cs" />
     <Compile Include="RedheadDuck.cs" />
